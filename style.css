@@ -312,9 +312,22 @@ input:-webkit-autofill:focus {
     text-transform: uppercase;
     letter-spacing: 2px;
     height: inherit;
-    margin-top: 8px;
+    margin-top: 0px;
     padding-left: 0;
 }
+
+.titlelogo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 767px) {
+    .logo {
+      width: 80px;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
 
 .mainmenu-area .logo h2 {
     margin-bottom: 0;
@@ -368,11 +381,12 @@ input:-webkit-autofill:focus {
 
 .client-area,
 .header-area {
-    background: #000000 url('images/parallax-2.jpg') no-repeat scroll center center / cover;
+    background: #000000 url('images/bg2.jpg') no-repeat scroll center center / cover;
 }
 
 .anlge-bg {
     background: url('images/angle-bg.png') no-repeat scroll center bottom -120px / 100% auto;
+    opacity: 0.5;
 }
 
 .overlay {
@@ -399,7 +413,6 @@ input:-webkit-autofill:focus {
 }
 
 .screen-slider .item {
-    background: url('images/mobile2.png') no-repeat scroll center center / auto 100%;
     padding: 56px 22px;
     display: inline-block;
     margin: auto;
@@ -598,13 +611,13 @@ input:-webkit-autofill:focus {
 ***/
 
 .testimonial-area {
-    background: url('images/parallax-7.jpg') no-repeat scroll center center / cover;
+    background: url('images/bg1.jpg') no-repeat scroll center center / cover;
     position: relative;
     color: #ffffff;
 }
 
 .testimonial-area:before {
-    opacity: 0.9
+    opacity: 0.7
 }
 
 .testimonial {
