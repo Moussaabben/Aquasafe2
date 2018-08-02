@@ -1,32 +1,3 @@
-/*-----------------------------------------------------------------------------------
-Template Name: New HTML5 Template,
-Template URI: http://www.themectg.com
-Description: This is html5 template
-Author: Themectg
-Author URI: http://www.themectg.com
-Version: 1.0
------------------------------------------------------------------------------------
-CSS INDEX
-===================
-1. Google font
-2. Theme Default CSS
-3. Helper-class
-4. Button-style
-5. Mainmenu-area
-6. Section-Background
-7. Header-style
-8. Headline-style
-9. Skills-area
-10. Service-area
-11. Work-area
-12. Team-area
-13. Bar-effect-css
-14. Masp style
-15. Form-style
-16. Scroll-To-Top-Button
-17. Preloader-css
------------------------------------------------------------------------------------*/
-
 /*-----------------
 1. Google font
 ------------------*/
@@ -170,8 +141,16 @@ input:-webkit-autofill:focus {
 *Default Background Class
 **/
 
+.overlay-home:before{
+    background: #f2fefe;
+    background: -webkit-gradient(linear, left bottom, left top, from(#f2fefe), to(#b3b3b3));
+    background: linear-gradient(to top, #f2fefe 0%, #b3b3b3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2fefe', endColorstr='#b3b3b3', GradientType=0);
+    color: #ffffff;
+}
+
 .overlay:before,
-.sky-bg {
+.sky-bg{
     background: #75cbe7;
     background: -webkit-gradient(linear, left top, left bottom, from(#75cbe7), to(#138fc2));
     background: linear-gradient(to bottom, #75cbe7 0%, #138fc2 100%);
@@ -303,6 +282,7 @@ input:-webkit-autofill:focus {
 }
 
 .overlay,
+.overlay-home,
 .overlay a,
 .mainmenu-area a {
     color: #ffffff;
@@ -378,22 +358,34 @@ input:-webkit-autofill:focus {
 /**
 *Header-area
 **/
+video { 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
 
-.client-area,
 .header-area {
     background: #000000 url('images/bg2.jpg') no-repeat scroll center center / cover;
 }
 
-.anlge-bg {
-    background: url('images/angle-bg.png') no-repeat scroll center bottom -120px / 100% auto;
-    opacity: 0.5;
+.client-area {
+    background: #000000 url('images/singature seaal.jpg') no-repeat scroll center center / cover;
 }
 
-.overlay {
+.anlge-bg {
+    background: url('images/angle-bg.png') no-repeat scroll center bottom -120px / 100% auto;
+    opacity: 0.3;
+}
+
+.overlay,
+.overlay-home{
     position: relative;
 }
 
-.overlay:before {
+.overlay:before,
+.overlay-home:before {
     content: "";
     position: absolute;
     left: 0;
@@ -413,6 +405,12 @@ input:-webkit-autofill:focus {
 }
 
 .screen-slider .item {
+    padding: 56px 22px;
+    display: inline-block;
+    margin: auto;
+}
+.screen-slider .item#phonedb {
+    background: url('images/mobile2.png') no-repeat scroll center center / auto 100%;
     padding: 56px 22px;
     display: inline-block;
     margin: auto;
@@ -510,6 +508,12 @@ input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1)
 }
+.caption-photo-unique {
+    display: inline-block;
+    margin-left: 60px;
+    height: 100%;
+    width: 100%;
+}
 
 .caption-slider .caption-photo.two {
     margin-top: 60px;
@@ -534,10 +538,9 @@ input:-webkit-autofill:focus {
     -webkit-animation-delay: 1s;
     animation-delay: 1s
 }
-
-.caption-slider .caption-photo.two {
-    -webkit-animation-delay: 1.2s;
-    animation-delay: 1.2s
+.caption-photo-unique{
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
 }
 
 
@@ -627,10 +630,7 @@ input:-webkit-autofill:focus {
 .testimonial .testimonial-photo {
     margin-bottom: 20px;
     display: inline-block;
-    margin-right: 30px;
     border-radius: 50%;
-    -webkit-box-shadow: 5px 10px 30px -10px rgba(255, 255, 255, 0.5);
-    box-shadow: 5px 10px 30px -10px rgba(255, 255, 255, 0.5);
     position: relative;
 }
 
