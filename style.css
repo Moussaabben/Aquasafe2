@@ -105,13 +105,19 @@ input:-webkit-autofill:focus {
     padding: 120px 0;
 }
 
-.social-menu {
+.social-menu{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+.social-text{
     list-style: none;
     margin: 0;
     padding: 10px;
 }
 
-.social-menu li {
+
+.social-menu li{
     display: inline-block;
     margin: 0 3px;
 }

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="FR">
 
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Aquasafe">
     <meta name="description" content="Entreprise">
-    <meta name="keywords" content="IOT - Internet Of Things">
+    <meta name="keywords" content="IOT AQUASAFE START-UP ALGERIE">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
     <title>| AQUASafe</title>
-    <!-- Place favicon.ico in the root directory -->
+    <!-- ICON -->
     <link rel="shortcut icon" type="image/ico" href="images/logo-blue.ico" />
     <!-- Plugin-CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -64,7 +64,6 @@
                     <li><a href="#metiers-section">NOS MÉTIERS</a></li>
                     <li><a href="#services-section">SERVICES</a></li>
                     <li><a href="#products-section">PRODUITS</a></li>
-                    <li><a href="#contact-section">CONTACT</a></li>
                     <li><a href="https://aquasafe.dz/Dashboard" target="_blank">DATASCREEN <span class="glyphicon glyphicon-lock"></span></a></li>
                 </ul>
             </nav>
@@ -623,31 +622,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-4">
-                        <address class="side-icon-boxes">
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/location-arrow.png" alt="">
-                                </div>
-                                <p><strong>Addresse: </strong>Rue des Fusillés, Djasr Kasentina<br />Alger, Algerie</p>
-                            </div>
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/phone-arrow.png" alt="">
-                                </div>
-                                <p><strong>Telephone: </strong>
-                                    <a href="callto:213553877301">+213 553 877 301</a> <br />
-                                    <a href="callto:21321384701">Fax: +213 21 38 47 01</a>
-                                </p>
-                            </div>
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/mail-arrow.png" alt="">
-                                </div>
-                                <p><strong>E-mail: </strong>
-                                    <a href="mailto:contact@aquasafe.dz">contact@aquasafe.dz</a> <br />
-                                </p>
-                            </div>
-                        </address>
+                        <div id="map" style="width:100%;height:400px;"></div>
                     </div>
                     <div class="col-xs-12 col-md-8">
                         <form action="process.php" id="contact-form" method="post" class="contact-form">
@@ -666,15 +641,49 @@
         <div class="footer-middle">
             <div class="container">
                 <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <address class="side-icon-boxes">
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/location-arrow.png" alt="">
+                                </div>
+                                <p><strong>Addresse: </strong>Rue des Fusillés, Djasr Kasentina<br />Alger, Algerie</p>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <address class="side-icon-boxes">
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/phone-arrow.png" alt="">
+                                </div>
+                                <p><strong>Telephone: </strong>
+                                    <a href="callto:213553877301">+213 553 877 301</a> <br />
+                                    <a href="callto:21321384701">Fax: +213 21 38 47 01</a>
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <address class="side-icon-boxes">
+                            <div class="side-icon-box">
+                                <div class="side-icon">
+                                    <img src="images/mail-arrow.png" alt="">
+                                </div>
+                                <p><strong>E-mail: </strong>
+                                    <a href="mailto:contact@aquasafe.dz">contact@aquasafe.dz</a> <br />
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-xs-12 col-sm-6 pull-right">
                         <ul class="social-menu text-right x-left">
                             <li><a href="https://www.facebook.com/aquasafe13" target="_blank"><i class="ti-facebook"></i></a></li>
                             <li><a href="https://twitter.com/AQUASafe_ALG" target="_blank"><i class="ti-twitter"></i></a></li>
                             <li><a href="https://www.youtube.com/watch?v=xICWRtG3-Ho&feature=iv&src_vid=4DcKPpAx3tU&annotation_id=annotation_158295969" target="_blank"><i class="ti-youtube"></i></a></li>
                         </ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <h2>SUIVEZ-NOUS</h2>
                     </div>
                 </div>
             </div>
@@ -683,7 +692,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <p>&copy;Copyright 2018 All rights reserved.    AQUASAFE</a></p>
+                        <p>&copy;Copyright 2018 All rights reserved.    AQUASAFE</p>
                     </div>
                 </div>
             </div>
@@ -707,7 +716,7 @@
     <script src="js/jquery.scrollify.js"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
     <script>
         $(function() {
           $.scrollify({
