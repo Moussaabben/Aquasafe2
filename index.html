@@ -73,7 +73,7 @@
 
 
     <!--Header-area-->
-    <header class="header-area overlay-home full-height relative v-center scroll" id="home-page">
+    <header class="header-area overlay-home full-height relative v-center" id="home-page">
         <video class="fullscreen-bg-video" autoplay muted loop src="video/aquasafe.mp4" type="video/mp4"></video>
         <div class="absolute anlge-bg"></div>
         <div class="container lvl2">
@@ -109,7 +109,7 @@
 
     <!-- Qui sommes nous -->
 
-    <section class="testimonial-area section-padding gray-bg overlay scroll" id="about-section">
+    <section class="testimonial-area section-padding gray-bg overlay" id="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 text-center">
@@ -131,7 +131,7 @@
 
     <!-- Nos Metiers -->
 
-    <section class="angle-bg sky-bg section-padding scroll" id="metiers-section">
+    <section class="angle-bg sky-bg section-padding " id="metiers-section">
         <div class="container">
                 <div class="row">
                         <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -241,7 +241,7 @@
     <!-- END nos Metiers -->
 
     <!--Services section-->
-    <section class="gray-bg section-padding scroll" id="services-section">
+    <section class="gray-bg section-padding " id="services-section">
             <div class="container">
                     <div class="row">
                             <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -292,7 +292,7 @@
 
         <!-- Products Section -->
 
-    <section class="angle-bg sky-bg section-padding scroll" id="products-section">
+    <section class="angle-bg sky-bg section-padding" id="products-section">
             <div class="container">
                     <div class="row">
                             <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -504,7 +504,7 @@
 
     <!-- END Blog Section -->
 
-    <footer class="footer-area relative sky-bg scroll" id="contact-section">
+    <footer class="footer-area relative sky-bg" id="contact-section">
         <div class="absolute footer-bg"></div>
         <div class="footer-top">
             <div class="container">
@@ -521,14 +521,14 @@
                         style="width:100%;height:400px;margin-bottom:20px;"></iframe>
                     </div>
                     <div class="col-xs-12 col-md-8">
-                        <form action="process.php" id="contact-form" method="post" class="contact-form">
+                        <form action="process.php" id="contact-form" method="POST" class="contact-form">
                             <div class="form-double">
                                 <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
                                 <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
                             </div>
                             <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
                             <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
-                            <button type="sibmit" class="button">Envoyer</button>
+                            <button type="submit" class="button">Envoyer</button>
                         </form>
                     </div>
                 </div>
@@ -609,17 +609,8 @@
     <script src="js/scrollUp.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/jquery.scrollify.js"></script>
     <!--Main-active-JS-->
-    <script src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaVGFSCINAiCM-TuN0cOgRyhqyUaTFmTw&callback=myMap"></script>
-    <script>
-        $(function() {
-          $.scrollify({
-            section : ".scrolliiiiiii",
-          });
-        });
-    </script>
+    <script src="js/main.js"></script>    
 </body>
 
 </html>
