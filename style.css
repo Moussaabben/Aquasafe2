@@ -535,7 +535,7 @@ input:-webkit-autofill:focus {
 }
 
 .caption-slider .caption-title {
-    -webkit-animation-delay: 0.4s;
+    -webkit-animation-delay: 0.ss;
     animation-delay: 0.4s
 }
 
