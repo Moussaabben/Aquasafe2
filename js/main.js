@@ -201,3 +201,40 @@
         $('.preloader').fadeOut(500);
     });
 })(jQuery);
+
+// Contact form code
+
+$('#send-message-btn').on('click', function(e)
+{
+	e.preventDefault();
+	$.post('/process.php',
+	{
+		"name": $('#form-name').val(),
+		"email": $('#form-email').val(),
+		"subject": $('#form-subject').val(),
+		"message": $('#form-message').val()
+	},
+	(data) => {
+		var $alertdiv = $('#alert-div');
+		if (data.includes('Congratulations'))
+		{	
+			if (!$alertdiv.hasClass('alert-success'))
+			{
+				$alertdiv.removeClass('alert-danger');
+				$alertdiv.addClass('alert-success');
+				$('#alert-title').text('Succés!');
+				$('#alert-description').text('Message envoyé avec succés');
+			}
+		}
+		else
+		{
+			if (!$alertdiv.hasClass('alert-danger'))
+			{
+				$alertdiv.removeClass('alert-success');
+				$alertdiv.addClass('alert-danger');
+				$('#alert-title').text('Echec!');
+				$('#alert-description').text('Le message n\'a pas pu étre envoyé');
+			}
+		}
+	});
+});
